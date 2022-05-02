@@ -1,0 +1,372 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body .flecha{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #D9C4B8;
+    border-radius: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    z-index: 1;
+}
+body .flecha img{
+    width: 40px;
+}
+/* ----------------------NAVBAR -----------------------*/
+.menuespacio{
+    margin: 0px 30px;
+}
+
+.menuespacio a{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/*---------------- HEADER---------------------- */
+header{
+    width: 100%;
+    background: url('../img/fondo2.jpg') #281A0C;
+    background-size: cover;
+    height: 1000px;
+    background-attachment: fixed;
+    background-position: center 0;
+}
+
+header .textos{
+    position: absolute;
+    top: 50%;
+    margin-top: -52px;
+    left: 200px;
+    color: #D9C4B8;
+}
+
+header .titulo{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+header .subtitulo{
+    width: 600px;
+    line-height: 45px;
+    text-align: center;
+}
+
+header .boton{
+    position: absolute;
+    top: 80%;
+    left: 46%;
+    background-color: #A65644;
+    padding: 8px 25px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+header .boton a{
+    color: #D9C4B8;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+
+/*---------------- SECCION CAFE ORGANICO---------------------- */
+.organico{
+    margin-top: 150px;
+}
+
+.organico .textos{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.organico .titulo{
+    color: #241F26;
+    margin-bottom: 20px;
+}
+
+.organico .textos .parrafo{
+    line-height: 28px;
+    font-size: 18px;
+    color: #241F26;
+    margin-bottom: 20px;
+}
+
+.organico .textos .enlace{
+    color: #BF7F5A;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/*---------------- GALERIA---------------------- */
+.galeria{
+    z-index: -1;
+}
+.galeria .titulo{
+    text-align: center;
+    color: #241F26;
+    margin-top: 100px;
+    font-weight: 100;
+    font-size: 35px;
+}
+.galeria .carrusel{
+    width: auto;
+    margin: auto;
+    height: 700px;
+    margin-top: 50px;
+}
+
+/*---------------- CONTACTO---------------------- */
+.contacto{
+    margin-top: 10px;
+}
+
+.contacto .fondo{
+    width: 100%;
+    background: url('../img/contact_img.jpg') #281A0C;
+    background-size: cover;
+    height:573px;
+    background-attachment: cover;
+    background-position: center 0;
+
+}
+
+.contacto .fondo .textos{
+    text-align: center;
+    color: #D9C4B8;
+    padding-top: 100px;
+}
+
+.contacto .fondo .textos .titulo{
+    color: #A65644;
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.contacto .fondo .textos .sub-titulo{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contacto .fondo .telefono,
+.contacto .fondo .correo{
+    color: #D9C4B8;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contacto .fondo .telefono p,
+.contacto .fondo .correo p{
+    margin-left: 20px;
+    margin-top: 18px;
+}
+
+/*---------------- CAFES---------------------- */
+.cafes{
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+.cafes .titulo{
+    text-align: center;
+}
+
+.cafes .container .row .tarjeta .card{
+    cursor: pointer;
+}
+
+.cafes .container .row .tarjeta .card .texto-img .boton{
+    position: absolute;
+    background-color: #A65644;
+    top: 40%;
+    left: 35%;
+    color: #D9C4B8;
+    transition: .3s ease;
+}
+.cafes .container .row .tarjeta .card .texto-img .boton:hover{
+    box-shadow: 2px 2px 3px #241F26;
+}
+
+.cafes .container .row .tarjeta .card .card-body .titulo-cafe{
+    color: #A65644;
+    font-weight: bold;
+    font-size: 25px;
+}
+.cafes .container .row .tarjeta .card .card-body .texto-cafe{
+    font-size: 18px;
+    color: #241F26;
+}
+
+.cafes .container .row .tarjeta .card .card-body .cafe-boton{
+    font-size: 19px;
+    color: #BF7F5A;
+    font-weight: bold;
+    border:0
+}
+
+
+
+/*---------------- MAPA---------------------- */
+
+.mapa{
+    margin-top:0px;
+}
+
+/*---------------- FOOTER---------------------- */
+
+footer{
+    background-color: #241F26;
+    height: 220px;
+}
+
+footer .container .row .datos{
+    color: #D9C4B8;
+    text-align: center;
+}
+footer .container .row .datos p{
+    margin-top: 20px;
+}
+footer .container .row .datos .telefono{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .container .row .datos .telefono p{
+    font-size: 18px;
+    margin-left: 10px;
+}
+footer .redes{
+    color: #D9C4B8;
+    text-align: center;
+}
+footer .redes div .iconos{
+    margin-top: 20px;
+    font-size: 35px;
+}
+footer .redes div .iconos i{
+    margin: 0 20px;
+}
+footer .redes div p{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+@media screen and (max-width:1024px) {
+    header .textos{
+        position: relative;
+        left: 0px;
+        top: 15%;
+        text-align: center;
+    }
+    header .subtitulo{
+        width: auto;
+    }
+    header .boton{
+        position: relative;
+        left: 0;
+        top: 30%;
+        text-align: center;
+        width: 30%;
+    }
+    .galeria .carrusel{
+        width: auto;
+        height: auto;
+        margin-top: 50px;
+    }
+    .cafes .container .row .tarjeta .card .texto-img .boton{
+        position: absolute;
+        background-color: #A65644;
+        top: 35%;
+        left: 20%;
+        
+    }
+
+}
+
+@media screen and (max-width:850px) {
+    header .textos{
+        position: relative;
+        left: 0px;
+        top: 15%;
+        text-align: center;
+    }
+    header .subtitulo{
+        width: auto;
+    }
+    header .boton{
+        position: relative;
+        left: 0;
+        top: 30%;
+        text-align: center;
+        width: 60%;
+    }
+
+    /*---------------- SECCION CAFE ORGANICO---------------------- */
+
+    .organico .container .row .img img{
+        width: 100%;
+    }
+    
+    .organico .container .row .textos{
+        text-align: center;
+    }
+
+    /*---------------- GALERIA---------------------- */
+    .galeria .carrusel{
+        width: auto;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    /*---------------- CONTACTO---------------------- */
+    .contacto{
+        margin-top: 20px;
+    }
+    .contacto .fondo .textos .titulo{
+        font-size: 35px;
+        font-weight: bold;
+    }
+    
+    .contacto .fondo .textos .sub-titulo{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    
+    .contacto .fondo .telefono,
+    .contacto .fondo .correo{
+        font-size: 20px;       
+    }
+
+    /*---------------- CAFES---------------------- */
+    .cafes{
+        margin-bottom: 100px;
+    }
+    .cafes .container .row .tarjeta .card{
+        margin-bottom: 100px;
+    }
+    .cafes .container .row .tarjeta .card .texto-img .boton{
+        position: absolute;
+        background-color: #A65644;
+        top: 40%;
+        left: 35%;
+        color: #D9C4B8;
+        transition: .3s ease;
+    }
+
+     /*---------------- CONTACTO---------------------- */
+
+     footer{
+        height: auto;
+     }
+}
